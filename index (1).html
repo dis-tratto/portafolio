@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Ian Matias Riaño Valle | Portafolio</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet" />
+  <style>
+    :root {
+      --bg: #0d1117;
+      --text: #c9d1d9;
+      --primary: #58a6ff;
+      --card-bg: #161b22;
+      --accent: #238636;
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+      font-family: 'Inter', sans-serif;
+    }
+
+    body {
+      background-color: var(--bg);
+      color: var(--text);
+      line-height: 1.6;
+    }
+
+    header {
+      text-align: center;
+      padding: 3rem 1rem;
+      background: #010409;
+    }
+
+    header h1 {
+      font-size: 2.5rem;
+      margin-bottom: 0.5rem;
+    }
+
+    header p {
+      font-size: 1.2rem;
+      color: #8b949e;
+    }
+
+    .container {
+      max-width: 960px;
+      margin: 0 auto;
+      padding: 2rem 1rem;
+    }
+
+    .section {
+      margin-bottom: 3rem;
+    }
+
+    .section h2 {
+      font-size: 1.8rem;
+      margin-bottom: 1rem;
+      color: var(--primary);
+      border-bottom: 1px solid #30363d;
+      padding-bottom: 0.3rem;
+    }
+
+    .projects-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      gap: 1.5rem;
+    }
+
+    .project-card {
+      background-color: var(--card-bg);
+      border: 1px solid #30363d;
+      border-radius: 10px;
+      padding: 1.5rem;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .project-card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+    }
+
+    .project-card h3 {
+      color: var(--primary);
+      margin-bottom: 0.5rem;
+    }
+
+    .project-card p {
+      color: #8b949e;
+    }
+
+    .project-card a {
+      display: inline-block;
+      margin-top: 0.75rem;
+      color: var(--accent);
+      text-decoration: none;
+      font-weight: 600;
+    }
+
+    .skills-list {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.75rem;
+    }
+
+    .skill {
+      background-color: #21262d;
+      padding: 0.5rem 1rem;
+      border-radius: 6px;
+      font-size: 0.9rem;
+      font-weight: 600;
+      color: var(--primary);
+    }
+
+    .contact a {
+      display: inline-block;
+      margin-right: 1rem;
+      color: var(--primary);
+      text-decoration: none;
+    }
+
+    .contact a:hover {
+      text-decoration: underline;
+    }
+
+    footer {
+      text-align: center;
+      padding: 2rem 1rem;
+      background-color: #010409;
+      color: #8b949e;
+    }
+
+    @media (max-width: 600px) {
+      header h1 {
+        font-size: 2rem;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Ian Matias Riaño Valle</h1>
+    <p>Desarrollador | Apasionado por la programación</p>
+  </header>
+
+  <main class="container">
+    <section class="section about">
+      <h2>Sobre Mí</h2>
+      <p>Hola, soy Ian Matias Riaño Valle, un desarrollador con experiencia en desarrollo web, análisis de datos y frontend. Me apasiona crear soluciones innovadoras y aprender nuevas tecnologías. Aquí encontrarás algunos de mis proyectos y habilidades.</p>
+    </section>
+
+    <section class="section projects">
+      <h2>Proyectos</h2>
+      <div class="projects-grid">
+        <div class="project-card">
+          <h3>IAPES</h3>
+          <p>Página web educativa creada para apoyar a estudiantes en la preparación de las pruebas Saber 11.</p>
+          <a href="https://github.com/tu-usuario/iapes" target="_blank">Ver en GitHub</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="section skills">
+      <h2>Habilidades</h2>
+      <div class="skills-list">
+        <span class="skill">HTML</span>
+        <span class="skill">Java</span>
+        <span class="skill">Python
